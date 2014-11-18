@@ -1,7 +1,9 @@
-## Put comments here that give an overall description of what your
-## functions do
+## This script comprises two functions. It makes inversion of a given matrix and store it in the cache
+##for further process
+##Author: Yuan Cheng, November 17, 2014
 
-## Write a short comment describing this function
+## makerCacheMatrix takes a matrix and construct a list of getter and setter and return a list
+##to be used by cacheSolve method
 
 makeCacheMatrix <- function(x = matrix()) {
   inv <- NULL
@@ -18,7 +20,8 @@ makeCacheMatrix <- function(x = matrix()) {
 }
 
 
-## Write a short comment describing this function
+## cacheSolve performs inversion of a given matrix 'x' and store it in the cache by using
+## setter and getter functions provided in makerCacheMatrix
 
 cacheSolve <- function(x, ...) {
         ## Return a matrix that is the inverse of 'x'
